@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- google font  -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+      </style>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- hello section start here -->
+    <div
+      class="bg-[url('images/banner-img.jpg')] w-full bg-no-repeat bg-cover h-[450px]"
+    >
+      <h1
+        class="text-white text-center tracking-widest font-semibold pt-4 text-xl font-title">
+        EATMAP
+      </h1>
+
+      <h1 class="text-white text-5xl text-center pt-40">
+        Eat. Share. <br />
+        Discover.
+      </h1>
+      <p class="text-center text-white px-5">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quis
+        ipsa nihil beatae officiis iusto quasi, porro libero optio similique?
+      </p>
+    </div>
+    <!-- hello section end here -->
+    <!-- subscribe section start here -->
+    <div class="bg-black h-80 w-full">
+      <h1 class="text-white text-3xl text-center pt-5">Subscribe</h1>
+      <p class="text-center pt-4 text-gray-400">
+        Sign up to be the first to get updates.
+      </p>
+      <div class="flex justify-center pt-4 flex-col items-center">
+        <input
+          class="text-white bg-transparent pl-3 py-3 border-white w-11/12 rounded-lg border-2"
+          type="text"
+          placeholder="Email"
+        />
+        <button
+          class="w-11/12 rounded-lg bg-white mt-4 text-black text-xl font-semibold py-3"
+        >
+          SIGN UP
+        </button>
+      </div>
+    </div>
+    <!-- subscribe section end here -->
+
+    <!-- footer section start here -->
+    <div class="bg-black">
+      <p class="text-center text-sm text-gray-400 pb-4">
+        Copyright &copy; 2024 Eatmap - All Rights Reserved.
+      </p>
+    </div>
+    <!-- footer section end here -->
+  </body>
+</html>
